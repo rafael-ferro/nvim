@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " general
-Plug 'benekastah/neomake'
+"Plug 'benekastah/neomake'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'haya14busa/incsearch.vim'
 Plug 'kien/ctrlp.vim'
@@ -47,10 +47,10 @@ call plug#end()
 " Plugins configs
 
 " neomake config
-autocmd! BufWritePost * Neomake
-" autocmd BufLeave * QFix
-let g:neomake_place_signs = 0
-let g:neomake_open_list = 2
+"autocmd! BufWritePost * Neomake
+"autocmd BufLeave * QFix
+"let g:neomake_place_signs = 0
+"let g:neomake_open_list = 2
 
 " CtrlP
 let g:ctrlp_prompt_mappings={'PrtClearCache()':['<Leader><F5>']}
