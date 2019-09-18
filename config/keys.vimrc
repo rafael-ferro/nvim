@@ -122,3 +122,8 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " colorizer
 nmap <Leader>tc :ColorToggle<CR>
 
+" https://stackoverflow.com/questions/676600/vim-search-and-replace-selected-text
+" By pressing ctrl+r in visual mode, you will be prompted to enter text to replace with.
+" Press enter and then confirm each change you agree with y or decline with n.
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
