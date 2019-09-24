@@ -129,3 +129,6 @@ nmap <Leader>tc :ColorToggle<CR>
 " Press enter and then confirm each change you agree with y or decline with n.
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
+" search for visually selected text
+" https://vim.fandom.com/wiki/Search_for_visually_selected_text
+vnoremap // y/\V<C-R>"<CR>
