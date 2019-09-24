@@ -86,7 +86,9 @@ map Q gq
 nmap <C-s> <C-a>
 
 " Word count selection
-vnoremap <Leader>wc :w !wc -w<CR>
+"vnoremap <Leader>wc :w !wc -w<CR>
+" Word count document
+nmap <Leader>wc :w !wc -w<CR>
 
 " override read-only permissions
 cmap w!! %!sudo tee > /dev/null %
