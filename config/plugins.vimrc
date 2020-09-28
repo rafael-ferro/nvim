@@ -22,14 +22,15 @@ Plug 'terryma/vim-multiple-cursors'
 "Plug 'python-mode/python-mode'
 
 " deoplete https://github.com/Shougo/deoplete.nvim
-"if has('nvim')
-"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'Shougo/deoplete.nvim'
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"endif
-"let g:deoplete#enable_at_startup = 1
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
+let g:python3_host_prog='/home/rafael/.anaconda3/bin/python'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'
