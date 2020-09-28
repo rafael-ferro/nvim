@@ -41,6 +41,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'nightsense/snow'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'kaicataldo/material.vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
