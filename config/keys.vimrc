@@ -18,6 +18,9 @@ nmap <Leader>w :w!<cr>
 nmap <Leader>q :q!<cr>
 nmap <Leader>wq :wq!<cr>
 
+" https://vim.fandom.com/wiki/Avoid_the_escape_key
+:imap jj <Esc>
+
 " toogle highlight search
 nnoremap h :set hlsearch!<CR>
 nmap / :set hlsearch <CR> <Plug>(incsearch-forward)
