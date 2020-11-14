@@ -8,10 +8,10 @@ let g:mapleader = "\<Space>"
 "     cima    L
 " esquerda  J   Ç  direita
 "    baixo    K
-noremap ç l
-noremap l k
-noremap k j
-noremap j h
+" noremap ç l
+" noremap l k
+" noremap k j
+" noremap j h
 
 " Fast saving
 nmap <Leader>w :w!<cr>
@@ -22,7 +22,7 @@ nmap <Leader>wq :wq!<cr>
 :imap jj <Esc>
 
 " toogle highlight search
-nnoremap h :set hlsearch!<CR>
+nnoremap ~ :set hlsearch!<CR>
 nmap / :set hlsearch <CR> <Plug>(incsearch-forward)
 nmap ? :set hlsearch <CR> <Plug>(incsearch-backward)
 nmap € :set hlsearch <CR> <Plug>(incsearch-stay)
@@ -52,10 +52,10 @@ nnoremap <Leader>wx :close<CR>
 "     cima    L
 " esquerda  J   Ç  direita
 "    baixo    K
-map <Leader>k <C-W>j
-map <Leader>l <C-W>k
-map <Leader>j <C-W>h
-map <Leader>ç <C-W>l
+" map <Leader>k <C-W>j
+" map <Leader>l <C-W>k
+" map <Leader>j <C-W>h
+" map <Leader>ç <C-W>l
 
 " %% to expand active buffer location on cmdline
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
