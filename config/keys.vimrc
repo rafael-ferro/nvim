@@ -49,13 +49,13 @@ nnoremap <Leader>wv :vsplit<CR>
 nnoremap <Leader>wx :close<CR>
 
 " Smart way to move between windows
-"     cima    L
-" esquerda  J   Ç  direita
-"    baixo    K
-" map <Leader>k <C-W>j
-" map <Leader>l <C-W>k
-" map <Leader>j <C-W>h
-" map <Leader>ç <C-W>l
+"     cima    k
+" esquerda  h   l  direita
+"    baixo    j
+map <Leader>j <C-W>j
+map <Leader>k <C-W>k
+map <Leader>h <C-W>h
+map <Leader>l <C-W>l
 
 " %% to expand active buffer location on cmdline
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
