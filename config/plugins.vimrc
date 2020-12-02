@@ -37,6 +37,9 @@ Plug 'myusuf3/numbers.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" tabs
+Plug 'mkitt/tabline.vim'
+
 " themes
 Plug 'nightsense/snow'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
