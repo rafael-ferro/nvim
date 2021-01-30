@@ -3,16 +3,6 @@
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
 
-" Mapeamento mais confortavel para abnt2
-" O dedo indicador fica posicionado sobre a tecla j
-"     cima    L
-" esquerda  J   Ç  direita
-"    baixo    K
-" noremap ç l
-" noremap l k
-" noremap k j
-" noremap j h
-
 " Fast saving
 nmap <Leader>w :w!<cr>
 nmap <Leader>q :q!<cr>

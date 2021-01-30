@@ -4,17 +4,18 @@ filetype plugin on
 autocmd FileType python setlocal omnifunc=python3complete#Complete
 set omnifunc=syntaxcomplete#Complete
 
-"set norelativenumber
-"set number
+set wildmenu
+set wildignore+=*/tmp/*,*.so,*.zip,*.jpg,*.png,*.svg,*.ttf,
+
 set hlsearch
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set backup   " keep a backup file
 endif
 
 set undodir=~/.config/nvim/undodir
@@ -30,9 +31,9 @@ set cursorline
 
 set showcmd		" display incomplete commands
 
-"if has('mouse')
-"  set mouse=a
-"endif
+if has('mouse')
+  set mouse=a
+endif
 
 if has("autocmd")
 
