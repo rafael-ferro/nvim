@@ -125,3 +125,16 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 " search for visually selected text
 " https://vim.fandom.com/wiki/Search_for_visually_selected_text
 vnoremap // y/\V<C-R>"<CR>
+
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
+
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <C-j> <Plug>(easymotion-j)
+map <C-k> <Plug>(easymotion-k)

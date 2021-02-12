@@ -8,6 +8,8 @@ Plug 'kien/ctrlp.vim'
 
 Plug 'junegunn/vim-easy-align'
 
+Plug 'easymotion/vim-easymotion'
+
 Plug 'mbbill/undotree'
 
 Plug 'tpope/vim-commentary'
