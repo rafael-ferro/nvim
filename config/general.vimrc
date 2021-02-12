@@ -123,3 +123,5 @@ set clipboard=unnamedplus
 
 set completeopt=longest,menuone,preview
 
+" automatically leave insert mode after 'updatetime' milliseconds of inaction
+au CursorHoldI * stopinsert
