@@ -28,8 +28,6 @@ Plug 'ciaranm/detectindent'
 
 Plug 'terryma/vim-multiple-cursors'
 
-Plug 'mkitt/tabline.vim'
-
 Plug 'myusuf3/numbers.vim'
 
 Plug 'vim-airline/vim-airline'
@@ -37,6 +35,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'morhetz/gruvbox'
+
+Plug 'voldikss/vim-floaterm'
+
+Plug 'liuchengxu/vim-which-key'
+
+Plug 'kyazdani42/nvim-web-devicons'
+
+Plug 'romgrk/barbar.nvim'
 
 " deoplete https://github.com/Shougo/deoplete.nvim
 if has('nvim')
@@ -51,6 +57,11 @@ let g:python3_host_prog='/home/rafael/.anaconda3/bin/python'
 
 call plug#end()
 
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
 
 " Plugins configs
 
